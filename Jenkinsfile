@@ -4,14 +4,14 @@ pipeline {
     stage("build") {
       steps {
         sh """
-          docker build -t hello_there .
+          docker build --rm -f "Dockerfile" -t vinorf:qa .
         """
       }
     }
     stage("run") {
       steps {
         sh """
-          docker run --rm hello_there
+          docker run --rm -v $(pwd):/workspace:cached -w /workspace vinorf:qa python3 -m robot TestSuite
         """
       }
     }

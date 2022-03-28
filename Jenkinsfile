@@ -11,7 +11,7 @@ pipeline {
     stage("run") {
       steps {
         sh """
-          docker run --rm -v $(pwd):/workspace:cached -w /workspace vinorf:qa python3 -m robot TestSuite
+          docker run --rm -v Test_Docker:/workspace:cached -w /workspace vinorf:qa python3 -m robot TestSuite
         """
       }
     }

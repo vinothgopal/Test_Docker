@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-#!/usr/bin/env groovy
+
+
 // The above line is used to trigger correct syntax highlighting.
 
 import hudson.model.*
@@ -130,8 +130,7 @@ pipeline {
         }
     }   
 }
-=======
-#!/usr/bin/env groovy
+
 // The above line is used to trigger correct syntax highlighting.
 
 pipeline {
@@ -220,4 +219,4 @@ pipeline {
         }
     }   
 }
->>>>>>> d6727f3f5a2387662bf93bc15f3546477da90b3e
+
